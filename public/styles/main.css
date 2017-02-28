@@ -1,0 +1,16 @@
+.icon {
+  float:left;
+}
+
+.jtronOne {
+background-image: url('/public/images/header2.jpg');
+background-size: 100%;
+}
+
+.header {
+   text-align:center;
+}
+
+a {
+  color:black;
+}

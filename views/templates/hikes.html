@@ -1,0 +1,19 @@
+<div class="jumbotron jtronOne">
+  <div class="container">
+    <img class= "icon" src="public/images/hiking-icon.png">
+    <div class="header">
+      <h1>Bay Area Hikes</h1>
+      <p>Find your next hike!</p>
+    </div>
+  </div>
+</div>
+<div class="hike-show" ng-repeat="hike in hikesIndexCtrl.hikes">
+    <div class="col-md-4 thumb">
+      <img ng-src="{{hike.image}}" class="img-responsive">
+      <div class="caption post-content">
+      <h2><a ng-href="/hikes/{{hike.id}}">{{hike.name}}</a></h2>
+      <br>
+      </div>
+      
+    </div>
+</div>

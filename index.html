@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="hikes">
+<html lang="en" ng-app="hikesApp">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +7,8 @@
 
   <!-- bootstrap css -->
   <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
+  <!--custom css-->
+  <link type="text/css" rel="stylesheet" href="../public/styles/main.css">
   <!-- angular -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
 
@@ -15,24 +16,17 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
 
   <!-- custom script (angular app) -->
-  <script type="text/javascript" src="/public/scripts/app.js"></script>
-  <script type="text/javascript" src="/controllers/HikessIndexController.js"></script>
+  <script type="text/javascript" src="../public/scripts/app.js"></script>
+  <script type="text/javascript" src="../controllers/HikesIndexController.js"></script>
   <script type="text/javascript" src="/controllers/HikesShowController.js"></script>
   <title>Bay Area Hikes</title>
 </head>
 
 <body>
-  <div class="jumbotron">
-    <div class="container">
-      <h1>Bay Area Hikes</h1>
-      <p>Find your next hike!</p>
-    </div>
-  </div>
+  
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-md-offset-3">
         <div ng-view></div>
-      </div>
     </div>
   </div>
 </body>

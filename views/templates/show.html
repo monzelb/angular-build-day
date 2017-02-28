@@ -1,0 +1,15 @@
+<div class="jumbotron jtronTwo">
+  <div class="container">
+    <h1>{{ hikesShowCtrl.hike.name }}</h1>
+    <p>{{ hikesShowCtrl.hike.location }}</p>
+  </div>
+</div>
+<div class="col-md-6 image-container">
+  <img ng-src="{{hikesShowCtrl.hike.image}}" class="img-responsive">
+</div>
+<div class="col-md-6 info-container">
+  <h4><b>Location</b>: {{hikesShowCtrl.hike.location}}</h3>
+  <h4><b>Distance (round-trip)</b>: {{hikesShowCtrl.hike.distance}}</h3>
+  <h4><b>Description:</b> {{hikesShowCtrl.hike.description}}</h3>
+
+
